@@ -1,0 +1,119 @@
+:root{
+    --clr-btn: #596D48;
+    --input-border: #E5E7EB;
+    --input-error: red;
+    --input-focus: blue;
+}
+@font-face{
+    font-family: Norse;
+    src: url(/Norse-Bold.otf) format('opentype');
+}
+*{
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    display: flex;
+
+}
+.picture{
+    position: absolute;
+    background-image: url(/left.jpg);
+    background-size: cover;
+    width: 80vh;
+    height: 100%;
+}
+.logo{
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+.logo img{
+    max-height: 15vh;
+    color: #E5E7EB;
+}
+.logo p{
+    font-family: Norse;
+    font-size: 100px;
+    color: #E5E7EB;
+}
+
+.rightPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 45%;
+    margin-top: 10%;
+
+}
+
+.headline{
+    margin-top: -10%;
+    margin-bottom: 10%;
+}
+
+.signUp p{
+    margin-bottom: 2%;
+}
+.field{
+    display: grid;
+    min-height: 30vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 34% 34% 32%;
+    margin-bottom: 3%;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.input input{
+    width: 40vh;
+    background: rgba(255,255,255,0.1);
+    border: #E5E7EB;
+    outline: 0;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.input input:focus{
+    border: solid 1px var(--input-focus);
+    box-shadow: 1px;
+}
+/* .input input:invalid{
+    border: solid 1px var(--input-error);
+    box-shadow: 1px;
+} */
+.error{
+    border: solid 1px var(--input-error);
+    box-shadow: 1px;
+}
+
+button{
+    background-color: var(--clr-btn);
+    text-decoration: none;
+    color: white;
+    width: 30vh;
+    height: 6vh;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 3%;
+}
+
+.logIn{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
